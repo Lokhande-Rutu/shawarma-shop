@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shawarma Spot | Indapur</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#ffb703;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#ffb703;
+    color:#111;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    margin:5px;
+}
+
+.btn:hover{
+    background:#fb8500;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:#d62828;
+}
+
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+    text-align:center;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+iframe{
+    width:100%;
+    height:400px;
+    border:none;
+    border-radius:15px;
+    margin-top:25px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:40px;
+}
+
+nav{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav ul{
+    gap:15px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">SHAWARMA SPOT</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>SHAWARMA SPOT</h1>
+<p>Fresh • Juicy • Loaded With Flavor</p>
+
+<a href="tel:7709035595" class="btn">📞 Call Now</a>
+<a href="https://wa.me/917709035595" class="btn">WhatsApp Order</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+<p>
+Welcome to Shawarma Spot, Indapur's favorite destination for delicious
+and freshly prepared shawarmas. We serve mouth-watering wraps,
+special shawarmas, fries and refreshing beverages made with quality
+ingredients and authentic taste.
+</p>
+</div>
+</section>
+
+<section id="menu">
+<h2 class="section-title">Popular Menu</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>Chicken Shawarma</h3>
+<p>Freshly grilled and loaded with flavor.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>Special Shawarma</h3>
+<p>Extra fillings with signature sauces.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>Fries & Drinks</h3>
+<p>Perfect combo with every order.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="section-title">Gallery</h2>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=900&q=80">
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+
+<p><strong>📍 Address:</strong></p>
+<p>एस टी स्टँड समोर,<br>
+आंबट गोड भेळ शेजारी,<br>
+इंदापूर</p>
+
+<p><strong>📞 Phone:</strong> 7709035595</p>
+
+<a href="https://www.google.com/maps/place/SHAWARMA+SPOT/@18.1161749,75.0279274,17z/data=!3m1!4b1!4m6
+!3m5!1s0x3bc4799ec526fcf3:0x5a3cf8c0b8382317!8m2!3d18.1161749!4d75.0279274!16s%2Fg%2F11ymr3ttx4!18m1!1
+e1?entry=ttu" target="_blank" class="btn"> 📍 Get Directions </a>
+
+<iframe
+src="https://maps.google.com/maps?q=18.1161749,75.0279274&z=15&output=embed">
+</iframe>
+
+</div>
+</section>
+
+<footer>
+© 2026 Shawarma Spot | Indapur
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917709035595">
+💬
+</a>
+
+</body>
+</html>
+```
